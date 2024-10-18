@@ -11,6 +11,6 @@ document.querySelector('#submit').addEventListener('click', function() {
     if(name === "RNDuser" && pass === "RNDpass123_"){
         window.location.href = "../homePage/homePage.html";
     }else{
-        warn("Username/ password salah!\nSilahkan  coba lagi.");
+        warn("Username/ password salah!\nSilahkan coba lagi.");
     }
 });

@@ -1,18 +1,23 @@
- 
+
+
 body { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    background-image: url("wallpaper.png"); /*silahkan diganti*/
+    background-position: 50%;
+    /* background-color: black; */
     background-size: cover;
+    height: 100vh;
+    position: relative;
+    justify-self: 50px;
 }
 
 .container {
-    background-color: rgb(39, 6, 102);
+    background-color: rgb(41, 21, 223);
     color: white;
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 0.75rem;
     -webkit-border-radius: 0.75rem;
     -moz-border-radius: 0.75rem;

@@ -1,21 +1,16 @@
 
 
- 
 
-const tombol = document.querySelector('#submit');
-// dom event
-tombol.addEventListener('click', function() {
-    var name,pass;
+function warn(str){
+    alert(str);
+    console.log(str);
+}
+
+document.querySelector('#submit').addEventListener('click', function() {
+    var name = document.getElementById('username').value,pass = document.getElementById('password').value;
     if(name === "RNDuser" && pass === "RNDpass123_"){
-        alert('anda berhasil login, mengalihkan ke home page..');
-        window.location.href = "homePage.html";
+        window.location.href = "../homePage/homePage.html";
     }else{
-        alert("yang bener");
+        warn("Username/ password salah!\nSilahkan  coba lagi.");
     }
 });
-
-
-const pictures = ['satu.jpg','dua.jpg','tiga.jpg'];
-
-
-

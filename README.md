@@ -1,20 +1,27 @@
 # RnD-Rolling Quest
 
 
-## Login Page
-* [html](loginPage.html)
 
-* [css](loginPage.css)
+## Login Page
+
+* [html](loginPage/loginPage.html)
+
+* [css](loginPage/loginPage.css)
+
+* [script](loginPage/loginPage.js)
+
 
 ## Home Page
-* [html](loginPage.html)
 
-* [css](loginPage.css)
+* [html](homePage/homePage.html)
 
-## Base Script
-* [base script](base.js)
+* [css](homePage/homePage.css)
+
+* [script](homePage/homePage.js)
 
 
 ## More Information
+
 * Kelompok 4
+
 * Created 18 Nov 2024

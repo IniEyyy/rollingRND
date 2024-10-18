@@ -1,29 +1,21 @@
 <!DOCTYPE html> 
 <html>
-  <head>
-    <title>Login Form</title>
-    <link rel="stylesheet" href="loginPage.css">
-  </head>
-  <body>
-    <div class="container">
-      <h2>LOGIN FORM</h2>
-      <input placeholder="Email" class="email" />
-      <br>
-      <br>
-      <input placeholder="Password" />
-      <br>
-      <br>
-      <button id="submit">Submit</button>
-    </div>
-    <script src="base.js"></script>
-    <noscript>Your browser does not support JavaScript!</noscript>
-    <script>
-        const tombol = document.querySelector('#submit');
-        // dom event
-        tombol.addEventListener('click', function() {
-            alert('anda berhasil login, mengalihkan ke home page');
-            window.location.href = "home.html";
-        });
-    </script>
-  </body>
+    <head>
+        <title>Login Form</title>
+        <link rel = "stylesheet" href = "loginPage.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h2>LOGIN FORM</h2>
+            <input placeholder="Username" id="username" class="username" />
+            <br>
+            <br>
+            <input placeholder="Password" id="password"/>
+            <br>
+            <br>
+            <button id="submit">Submit</button>
+        </div>
+        <script src = "loginPage.js"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
 </html>

@@ -2,19 +2,19 @@
 
 
 ## Login Page
-[html](loginPage.html)
+* [html](loginPage.html)
 
 [css](loginPage.css)
 
 ## Home Page
-[html](loginPage.html)
+* [html](loginPage.html)
 
-[css](loginPage.css)
+* [css](loginPage.css)
 
 ## Base Script
-[base script](base.js)
+* [base script](base.js)
 
 
 ## More Information
-### Kelompok 4
-### Created 18 Nov 2024
+* Kelompok 4
+* Created 18 Nov 2024

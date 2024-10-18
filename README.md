@@ -4,7 +4,7 @@
 ## Login Page
 * [html](loginPage.html)
 
-[css](loginPage.css)
+* [css](loginPage.css)
 
 ## Home Page
 * [html](loginPage.html)

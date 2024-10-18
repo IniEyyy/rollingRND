@@ -2,17 +2,19 @@
 
 
 ## Login Page
-* [html](loginPage.html)
+* [html](loginPage/loginPage.html)
 
-* [css](loginPage.css)
+* [css](loginPage/loginPage.css)
+
+* [script](loginPage/loginPage.js)
+
 
 ## Home Page
-* [html](loginPage.html)
+* [html](homePage/homePage.html)
 
-* [css](loginPage.css)
+* [css](homePage/homePage.css)
 
-## Base Script
-* [base script](base.js)
+* [script](homePage/homePage.js)
 
 
 ## More Information

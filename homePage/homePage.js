@@ -1,7 +1,3 @@
-
-
-
-
 var theme = 1;
 
 document.querySelector('#theme').addEventListener('click', function() {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style type="text/css">
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
+          background-size: cover;
+        }
+
+        .container {
+          background-color: rgb(39, 6, 102);
+          color: white;
+          padding: 2.5rem;
+          border-radius: 0.75rem;
+          -webkit-border-radius: 0.75rem;
+          -moz-border-radius: 0.75rem;
+          -ms-border-radius: 0.75rem;
+          -o-border-radius: 0.75rem;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>LOGIN FORM</h2>
+      <input placeholder="Email" class="email" />
+      <br />
+      <br />
+      <input placeholder="Password" />
+      <br />
+      <br />
+      <button id="submit">Submit</button>
+    </div>
+
+    <script>
+        const tombol = document.querySelector('#submit');
+        // dom event
+        tombol.addEventListener('click', function() {
+            alert('anda berhasil login, mengalihkan ke home page');
+            window.location.href = "home.html";
+        });
+    </script>
+  </body>
+</html>

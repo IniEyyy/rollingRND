@@ -1,16 +1,106 @@
 
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background-color:teal;
+    height: 5%;
+    padding: 1rem 2.5rem;
 
-img {
-    display: block;
+    border-style:outset;
+    border-color:aqua;
+    border-radius: 0.65rem;
+    -webkit-border-radius: 0.65rem;
+    -moz-border-radius: 0.65rem;
+    -ms-border-radius: 0.65rem;
+    -o-border-radius: 0.65rem;
+    z-index: 1000;
+    align-content: center;
+    font-size: large;
+    right:0.5%;
+    left:0.5%;
 }
 
-.container {
-    background-color: rgb(39, 6, 102);
+html {
+    background-color:darkslategray;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.b1 {
+    margin:1rem;
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.navbtn {
     color: white;
-    padding: 2.5rem;
+    background-color: cadetblue;
+    border-style: outset;
+    border-spacing: 30px;
+    padding: 0.5rem;
     border-radius: 0.75rem;
     -webkit-border-radius: 0.75rem;
     -moz-border-radius: 0.75rem;
     -ms-border-radius: 0.75rem;
     -o-border-radius: 0.75rem;
+}
+
+.search-cont {
+    display: flex;
+    align-items: center;
+    color: black;
+    opacity: 0.4;
+    margin: 0.5rem;
+    /* padding: 0.5rem; */
+}
+
+.search {
+    opacity: 0.7;
+}
+
+.search2 {
+    color: white;
+}
+
+
+
+body.theme-light {
+    background-color: white;
+    color: black;
+}
+
+body.theme-dark {
+    background-color: #333;
+    color: white;
+}
+
+body.theme-colorful {
+    background-color: yellow;
+    color: green;
+}
+
+.theme-slider {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    right: 0px;
+}
+
+.theme-option {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.theme-option:hover {
+    background-color: #f0f0f0;
 }

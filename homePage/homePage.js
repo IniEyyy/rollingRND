@@ -2,16 +2,19 @@
 
 
 
-document.querySelector('#submit').addEventListener('click', function() {
-    var name = document.getElementById('unique').value,pass = document.getElementById('unique').value;
-    if(name === "RNDuser" && pass === "RNDpass123_"){
-        alert('anda berhasil login, mengalihkan ke home page..');
-        window.location.href = "homePage.html";
-    }else{
-        alert("yang bener");
-    }
+// document.querySelector('#home').addEventListener('click', function() {
+//     //
+// });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeOptions = document.querySelectorAll('.theme-option');
+    
+    themeOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const selectedTheme = this.getAttribute('data-theme');
+            document.body.className = selectedTheme;
+        });
+    });
 });
-
-
-
 

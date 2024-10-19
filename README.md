@@ -2,7 +2,7 @@
 
 
 
-## Login Page
+## [Login Page](loginPage)
 
 * [html](loginPage/loginPage.html)
 
@@ -11,7 +11,7 @@
 * [script](loginPage/loginPage.js)
 
 
-## Home Page
+## [Home Page](homePage)
 
 * [html](homePage/homePage.html)
 

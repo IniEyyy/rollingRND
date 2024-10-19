@@ -2,19 +2,27 @@
 
 
 
-// document.querySelector('#home').addEventListener('click', function() {
-//     //
-// });
+var theme = 1;
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const themeOptions = document.querySelectorAll('.theme-option');
-    
-    themeOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            const selectedTheme = this.getAttribute('data-theme');
-            document.body.className = selectedTheme;
-        });
-    });
+
+console.log(document.documentElement);
+document.querySelector('#theme').addEventListener('click', function() {
+    var themebtn = document.getElementById('theme');
+    // console.log(themebtn.innerText);
+    switch(theme){
+        case 1:
+            theme = 2;
+            document.documentElement.style.backgroundColor = "darkslategray";
+            document.documentElement.style.color = "white";
+            themebtn.innerText = ' ☀ ';
+            break;
+        case 2:
+            theme = 1;
+            document.documentElement.style.backgroundColor = "white";
+            document.documentElement.style.color = "black";
+            themebtn.innerText = ' 🕶 ';
+            break;
+    }
 });
 

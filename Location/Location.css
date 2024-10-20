@@ -1,0 +1,37 @@
+body {
+    font-family: , sans-serif;
+    margin: 0;
+    background-color: #ffb700; /* Warna latar belakang abu-abu muda */
+    background-image: url('bg-warmindo.jpg'); /* Ganti 'bg-warmindo.jpg' dengan nama file gambar Anda */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffb;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cabang {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.fab { /* Untuk ikon FontAwesome */
+    margin-left: 5px;
+}

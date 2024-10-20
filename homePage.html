@@ -3,84 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Home Page</title>
         <link rel="stylesheet" href="homePage.css">
-        <div class="topbar">
-            <div class="navbar">
-                <button class="navbtn" id="home">Home</button>
-                <button class="navbtn" id="cart">Cart</button>
-                <button class="navbtn" id="more">More</button>
-                <div class="searchh">
-                    <input class="search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="search2"><i>🔍</i></button>
-                </div>
-            </div>
-            <div class="theme1">
-                <button id="theme" class="theme-option"> 🌞 </button>
-            </div>
-        </div>
     </head>
     <body>
-        <div class="b1">
-            <div class="bannerSil">
-                <link rel='stylesheet' href='banner.css'>
-                <section id="banner" class="section-m1">
-                <h4>Promo Mahasiswa</h4>
-                <h2>Diskon <span>50%</span> menggunakan kartu mahasiswa!</h2>
-                <button class="normal">Lihat promo lainnya</button>
+        <nav>
+            <div class="brand">
+                <a href="#">Warmindo!</a></li>
             </div>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br><br>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="4" fill="cadetblue" />
-                Sorry, your browser does not support inline SVG.
-            </svg>
-            <br>
-
-            <label for="zzz">Brain Usage:</label>
-            <meter id="zzz" value="10" min="0" max="10" optimum="10">100%</meter><br>
-
-            <script src="homePage.js"></script>
-            <noscript>Your browser does not support JavaScript!</noscript>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+            <a href="loginPage.html" class="login_btn">Get Eating</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="loginPage.html">Login / Sign Up</a></li>
+            </div>
+        </nav>
+        <section id="banner" class="section-m1">
+            <h4>Promo Mahasiswa</h4>
+            <h2>Diskon <span>50%</span> kartu mahasiswa!</h2>
+            <button class="normal">Lihat Menu</button>
+        </section>
+        <div class="about">
+            <h1>Tentang kami!</h1>
+            <h3>
+                Didirikan pada tahun 2045, Warmindo! Lahir dari kecintaan kami terhadap mie instan yang telah menjadi favorit banyak orang. 
+                Kami percaya bahwa mie instan tidak hanya sekadar makanan praktis yang tidak terlalu bergizi, tetapi juga dapat menjadi bahan dasar makanan yang lebih bergizi.
+                <br><br>
+                Kami berharap dengan menu-menu menarik kami, mie instan dapat dinikmati dalam bentuk yang lebih kaya rasa dan gizi. 
+                <br><br>
+                Warmindo! Menambah gizi bukan mengurangi porsi. 
+            </h3>
+            <a href="#" class="pesan_btn">Pesan di sini!</a>
         </div>
+        <script src="homePage.js"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
     </body>
     <footer class="b1">
-        <br><br>
-        <address>
-            Kelompok 6
-        </address>
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown_menu');
+            toggleBtn.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('show');
+                const isShow = dropdownMenu.classList.contains('show');
+                toggleBtnIcon.classList = isShow?'fa-solid fa-xmark':'fa-solid fa-bars';
+            });
+        </script>
     </footer>
 </html>

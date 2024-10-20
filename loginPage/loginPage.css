@@ -5,8 +5,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("wallpaper.png"); /*silahkan diganti ges background atau warna lain*/
-    /* background-color: white; */
+    /* background-image: url("wallpaper.png"); silahkan diganti ges background atau warna lain */
+    background-color: #FFED9F;/*entah mau apa :v*/
     background-size: cover;
     background-position: 0;
     background-repeat: no-repeat;

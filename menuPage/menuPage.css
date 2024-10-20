@@ -1,67 +1,84 @@
 
-button.normal{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: #000;
-    background-color: #FFED9F;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
-
-button.normal:hover{
-    opacity: 0.85;
-}
-
-#banner{
-    position: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url("banner.jpeg");
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-}
-
-#banner h4{
-    color: #fff;
-    /* font-family: 'Roboto'; */
-    font-size: 16px;
-}
-
-#banner h2{
-    color: #fff;
-    /* font-family: 'Roboto'; */
-    font-size: 30px;
-    padding: 10px 0;
-}
-
-#banner h2 span{
-    color: greenyellow;
-}
-
-
-
 body {
     /* font-family: 'Poppins'; */
-    font-family: 'Arial', sans-serif;
     min-height: 100vh;
     background-color: #E3EAEC;
     background-size: cover;
-    background-position: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     margin-top: 3rem;
     box-sizing: border-box;
+    background-image: url('assets/bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.menu-container {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #100e0e;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.menu-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #f9eeec; 
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffaa9c;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #010101;
+    flex-grow: 1;
+}
+
+.menu-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+
 
 nav {
     background-color: #D5393A;
@@ -75,6 +92,7 @@ nav {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 10;
 }
 
 nav a{
@@ -170,26 +188,4 @@ nav .dropdown_menu{
 .about h1{
     font-weight: bold;
     color: #D5393A;
-}
-
-.about .pesan_btn{
-    text-decoration: none;
-    color:darkgreen;
-    padding: 0.5rem 1rem;
-    margin-right: 10px;
-    border-radius: 25px;
-    border: 2px solid #86C866;
-    font-size: 1rem;
-    font-weight: bold;
-    height: 15px;
-    min-width: 85px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-.about .pesan_btn:hover span{
-    width: 100%;
 }

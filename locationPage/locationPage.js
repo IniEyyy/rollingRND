@@ -7,6 +7,3 @@ toggleBtn.addEventListener('click', () => {
     const isShow = dropdownMenu.classList.contains('show');
     toggleBtnIcon.classList = isShow?'fa-solid fa-xmark':'fa-solid fa-bars';
 });
-document.querySelector('.normal').addEventListener('click', () => {
-    window.location.href = "../menuPage/menuPage.html";
-});

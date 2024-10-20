@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Home Page</title>
+        <link rel="stylesheet" href="homePage.css">
+    </head>
+    <body>
+        <nav>
+            <div class="brand">
+                <a href="#">Warmindo!</a></li>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+            <a href="loginPage.html" class="login_btn">Get Eating</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="loginPage.html">Login / Sign Up</a></li>
+            </div>
+        </nav>
+        <section id="banner" class="section-m1">
+            <h4>Promo Mahasiswa</h4>
+            <h2>Diskon <span>50%</span> kartu mahasiswa!</h2>
+            <button class="normal">Lihat Menu</button>
+        </section>
+        <div class="about">
+            <h1>Tentang kami!</h1>
+            <h3>
+                Didirikan pada tahun 2045, Warmindo! Lahir dari kecintaan kami terhadap mie instan yang telah menjadi favorit banyak orang. 
+                Kami percaya bahwa mie instan tidak hanya sekadar makanan praktis yang tidak terlalu bergizi, tetapi juga dapat menjadi bahan dasar makanan yang lebih bergizi.
+                <br><br>
+                Kami berharap dengan menu-menu menarik kami, mie instan dapat dinikmati dalam bentuk yang lebih kaya rasa dan gizi. 
+                <br><br>
+                Warmindo! Menambah gizi bukan mengurangi porsi. 
+            </h3>
+            <a href="#" class="pesan_btn">Pesan di sini!</a>
+        </div>
+        <script src="homePage.js"></script>
+        <noscript>Your browser does not support JavaScript!</noscript>
+    </body>
+    <footer class="b1">
+        <script>
+            const toggleBtn = document.querySelector('.toggle_btn');
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropdownMenu = document.querySelector('.dropdown_menu');
+            toggleBtn.addEventListener('click', () => {
+                dropdownMenu.classList.toggle('show');
+                const isShow = dropdownMenu.classList.contains('show');
+                toggleBtnIcon.classList = isShow?'fa-solid fa-xmark':'fa-solid fa-bars';
+            });
+        </script>
+    </footer>
+</html>
